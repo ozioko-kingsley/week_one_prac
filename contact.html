@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | SkillLink</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    #container {
+        width: 80%;
+        margin: 5% auto;
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    h2, h4 {
+        text-align: center;
+        color: #007bff;
+    }
+    .contact-info, .visit-info {
+        background: #e3f2fd;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 15px;
+    }
+    .contact_head {
+        display: flex;
+        flex-basis: content;
+        padding: 1rem;
+        gap: 1rem;
+    }
+    .contact-info h4, .visit-info h4 {
+        margin-bottom: 10px;
+        color: #0056b3;
+    }
+    .contact-info p, .visit-info p {
+        font-size: 16px;
+        color: #333;
+        margin: 5px 0;
+    }
+    .contact-form {
+        padding: 15px;
+        border-radius: 8px;
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom: 15px;
+    }
+    label {
+        font-weight: bold;
+        color: #444;
+        display: block;
+        margin-bottom: 5px;
+    }
+    input, textarea {
+        width: 60%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 16px;
+    }
+
+    .submit-btn {
+        width: 62%;
+        padding: 12px;
+        background-color: #007bff;
+        color: white;
+        font-size: 18px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+    .submit-btn:hover {
+        background-color: #0056b3;
+    }
+</style>
+<body>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="image/SkillLink_logo.png" width="50" height="50" alt="">
+                <a href="/index.html">SkillLink</a>
+            </div>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/assessment.html">Assessment</a></li>
+                <li><a href="/recommendations.html">Recommendations</a></li>
+                <li><a href="/mentorship.html">Mentorship</a></li>
+                <li><a href="/contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="carousel" id="carousel">
+            <img src="/image/contact_us.jpg" alt="call-center">
+        </div>
+    </div>
+
+    <div class="container hero_content">
+        <section id="home">
+            <h1>Contact Us</h1>
+            <p>Have questions? Reach out to our support team for assistance.</p>
+            <a href="#mentorship" class="cta-button">Find a Mentor</a>
+        </section>
+    </div>
+
+    <section id="home_title assess">
+        <div class="step_one_content assess_para">
+            <h2>Get in Touch</h2>
+            <h4>
+                We're here to help! Whether you need career advice, technical support, or general inquiries, our team is ready to assist you.
+            </h4>
+        </div>
+    </section>
+
+<div id="container">
+    <h2>Contact Us</h2>
+
+    <section class="contact_head">
+        <div class="contact-info">
+            <h4>Contact Information</h4>
+            <p><strong>Office Address:</strong> 1 James Cook Dr, Douglas QLD 4814, Australia</p>
+            <p><strong>Email:</strong> support@skilllink.com</p>
+            <p><strong>Phone:</strong> +61415760664</p>
+            <p><strong>Website:</strong> <a href="https://kingsleyskilllink.infinityfreeapp.com/" target="_blank">SkillLink</a></p>
+        </div>
+    
+        <div class="visit-info">
+            <h4>Visit Us at James Cook University</h4>
+            <p><strong>Campus Hours:</strong> Monday – Friday, 9 AM – 5 PM</p>
+            <p><strong>Walk-ins Welcome:</strong> Our team is available for career consultations and support.</p>
+            <p><strong>Need immediate assistance?</strong> Email us at <a href="mailto:support@skilllink.com"><strong>support@skilllink.com</strong></a>, and we’ll respond within <strong>24 hours</strong>.</p>
+        </div>
+    </section>
+
+</div>
+
+<div id="container">
+    <h2>Send Us a Message</h2>
+    <p style="text-align: center;">Have a question? Fill out the form below, and we’ll get back to you as soon as possible!</p>
+
+    <div class="contact-form">
+        <form id="contactForm">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Your Email</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="form-group">
+                <label>Subject</label>
+                <input type="text" id="subject" required>
+            </div>
+
+            <div class="form-group">
+                <label>Your Message (optional)</label>
+                <textarea id="message" rows="5"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">Submit</button>
+        </form>
+        <img src="/image/long_map.jpg" alt="">
+    </div>
+    <div style="clear: both; margin-top: 2rem; opacity: 50%;">
+        <img src="/image/map.jpg" width="100%" height="400px" alt="">
+    </div>
+</div>
+
+
+<footer>
+    <p>&copy; 2025 SkillLink by Kingsley Ozioko. All rights reserved.</p>
+</footer>
+
+<script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault(); // Prevent form submission
+
+        let name = document.getElementById("name").value.trim();
+        let email = document.getElementById("email").value.trim();
+        let subject = document.getElementById("subject").value.trim();
+        let message = document.getElementById("message").value.trim();
+
+        // Simple validation
+        if (name === "" || email === "" || subject === "") {
+            alert("Please fill in all required fields.");
+            return;
+        }
+
+        alert("✅ Message sent successfully! Our team will contact you soon.");
+        document.getElementById("contactForm").reset(); // Reset form fields
+    });
+</script>
+
+</body>
+</html>

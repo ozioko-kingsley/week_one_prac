@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Match Results</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .success-container {
+            max-width: 600px;
+            background: white;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #28a745;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .career-results,
+        .mentorship-section {
+            background: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 15px;
+        }
+
+        .mentor-card {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 10px 0;
+            text-align: left;
+        }
+
+        .mentor-card h4 {
+            margin: 5px 0;
+            color: #007bff;
+        }
+
+        .mentor-card p {
+            font-size: 14px;
+            color: #555;
+        }
+
+        .mentor-btn,
+        .download-btn,
+        .btn {
+            background: #007bff;
+            color: white;
+            padding: 10px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            display: inline-block;
+            margin-top: 10px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .mentor-btn:hover,
+        .download-btn:hover,
+        .btn:hover {
+            background: #0056b3;
+        }
+
+        footer {
+            text-align: center;
+            padding-top: 20px;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="success-container">
+        <h2>✅ Thank You, <span id="userName">User</span>!</h2>
+        <p>Your career assessment has been successfully submitted.</p>
+        <p>Based on your inputs, here are some career suggestions for you:</p>
+
+        <div class="career-results">
+            <h3>Suggested Careers for You:</h3>
+            <ul id="careerList">
+                <li>Analyzing your skills...</li>
+            </ul>
+            <button class="download-btn" onclick="downloadCareerList()">📥 Download Career Suggestions</button>
+            <a href="/assessment.html"> Take a Test </a>
+
+        </div>
+
+        <div class="mentorship-section">
+            <h3>👨‍🏫 Connect with a Mentor</h3>
+            <p>Schedule a meeting with an industry expert.</p>
+            <div id="mentorList">
+                <p>Finding the best mentors for you...</p>
+            </div>
+        </div>
+
+        <a href="index.html" class="btn">Explore More Careers</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 SkillLink by Kingsley Ozioko. All rights reserved.</p>
+    </footer>
+
+<script src="/success.js"></script>
+
+
+</body>
+
+</html>
